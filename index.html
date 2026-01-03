@@ -29,9 +29,11 @@
         }
         
         .section-2 {
-            position: relative;
+            position: fixed;
             z-index: 1;
             height: 100vh;
+            width: 100%;
+            top: 100vh;  /* Position it after first video */
             /* Your second section content */
         }
 
@@ -49,9 +51,24 @@
              height: 50px;
             background-color: rgb(77, 174, 230);
             width: 100%;
-            position: relative;
             z-index: 10;
-            margin-top: -25px;
+            margin-top: 600px;
+            top: 100vh;  /* Position it after first video */
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            width: 20%;
+            height: 20%;
+            padding: 15px;
+            position: relative;
+            transform: translateX(900px) translateY(100px);
+            overflow: auto;       /* Allow scrolling if content is too big */
+
         }
     </style>
 </head>
@@ -61,8 +78,9 @@
     </video>
     
     <div class="content">
-        <h1>Anime cozy day</h1>
-        <h3>Lazy day challenge</h3>
+        <h1 class="content-title">Cozy Anime Day</h1>
+        <h2 class="content-headline">A soft day and anime playing in the background</h2>
+        <h3 class="content-challenge">Lazy day challenge</h3>
     </div>
 
     <div class="divider-line"></div>
@@ -72,7 +90,10 @@
     </video>
     
     <div class="section-2">
-        <!-- Second section content -->
+        <h1 class="section-title">Anime I watch</h1>
+        <li class="section-item">
+            <h2>1. Spirited Away</h2>
+        </li>
     </div>
 </body>
 </html>
