@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lazy day Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+
     <style>
          body, html {
             margin: 0;
@@ -62,14 +67,30 @@
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(7px);
             -webkit-backdrop-filter: blur(7px);
-            width: 20%;
-            height: 20%;
-            padding: 15px;
+            width: 30%;
+            height: 30%;
+            padding: 25px;
             position: relative;
-            transform: translateX(900px) translateY(100px);
+            transform: translateX(900px) translateY(250px);
             overflow: auto;       /* Allow scrolling if content is too big */
 
         }
+         .content-japanese {
+        font-family: "Potta One", system-ui;
+        margin: auto;
+    }
+
+    .content-title {
+        font-family: "Funnel Display", system-ui;
+        font-weight: 800;
+        margin: 0 auto;
+    }
+
+    .content-headline, .content-challenge {
+        font-family: "Funnel Display", system-ui;
+        font-weight: 300;
+        margin: 0 auto;
+    }
     </style>
 </head>
 <body>
@@ -78,6 +99,7 @@
     </video>
     
     <div class="content">
+        <h1 class="content-japanese">コーディアニメの日</h1>
         <h1 class="content-title">Cozy Anime Day</h1>
         <h2 class="content-headline">A soft day and anime playing in the background</h2>
         <h3 class="content-challenge">Lazy day challenge</h3>
