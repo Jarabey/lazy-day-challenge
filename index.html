@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
 
     <style>
-         body, html {
+        body, html {
             margin: 0;
             padding: 0;
             width: 100%;
@@ -30,7 +30,6 @@
             position: relative;
             z-index: 1;
             height: 100vh;
-            /* Your content here */
         }
         
         .section-2 {
@@ -38,8 +37,7 @@
             z-index: 1;
             height: 100vh;
             width: 100%;
-            top: 100vh;  /* Position it after first video */
-            /* Your second section content */
+            top: 100vh;
         }
 
         .video-background-2 {
@@ -52,13 +50,13 @@
             z-index: -1;
         }
 
-        .divider-line{
-             height: 50px;
+        .divider-line {
+            height: 50px;
             background-color: rgb(77, 174, 230);
             width: 100%;
             z-index: 10;
-            margin-top: 600px;
-            top: 100vh;  /* Position it after first video */
+            margin-top: 610px;
+            top: 100vh;
         }
 
         .content {
@@ -71,30 +69,91 @@
             height: 30%;
             padding: 25px;
             position: relative;
-            transform: translateX(900px) translateY(250px);
-            overflow: auto;       /* Allow scrolling if content is too big */
-
+            transform: translateX(900px) translateY(280px);
+            overflow: auto;
         }
-         .content-japanese {
-        font-family: "Potta One", system-ui;
-        margin: auto;
-    }
 
-    .content-title {
-        font-family: "Funnel Display", system-ui;
-        font-weight: 800;
-        margin: 0 auto;
-    }
+        .content-japanese {
+            font-family: "Potta One", system-ui;
+            margin: auto;
+        }
 
-    .content-headline, .content-challenge {
-        font-family: "Funnel Display", system-ui;
-        font-weight: 300;
-        margin: 0 auto;
-    }
+        .content-title {
+            font-family: "Funnel Display", system-ui;
+            font-weight: 800;
+            margin: 0 auto;
+        }
+
+        .content-headline, .content-challenge {
+            font-family: "Funnel Display", system-ui;
+            font-weight: 300;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                width: 60%;
+                height: auto;
+                padding: 20px;
+                transform: translateX(50%) translateY(150px);
+                left: -50%;
+            }
+
+            .divider-line {
+                margin-top: 400px;
+            }
+
+            .content-title {
+                font-size: 24px;
+            }
+
+            .content-headline, .content-challenge {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                width: 85%;
+                height: auto;
+                padding: 15px;
+                transform: translateX(50%) translateY(80px);
+                left: -50%;
+            }
+
+            .divider-line {
+                height: 30px;
+                margin-top: 300px;
+            }
+
+            .content-title {
+                font-size: 18px;
+            }
+
+            .content-japanese {
+                font-size: 16px;
+            }
+
+            .content-headline, .content-challenge {
+                font-size: 12px;
+            }
+
+            .section-2 {
+                padding: 20px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .section-item h2 {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
-    <video class="video-background" autoplay loop muted>
+    <video class="video-background" autoplay loop muted playsinline>
         <source src="https://ik.imagekit.io/mkx0ak1ay/chihiro-ogino-spirited-away.3840x2160.mp4" type="video/mp4">
     </video>
     
@@ -107,7 +166,7 @@
 
     <div class="divider-line"></div>
     
-    <video class="video-background-2" autoplay loop muted>
+    <video class="video-background-2" autoplay loop muted playsinline>
         <source src="https://ik.imagekit.io/mkx0ak1ay/chihiro-waters.3840x2160.mp4" type="video/mp4">
     </video>
     
